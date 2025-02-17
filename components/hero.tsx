@@ -1,11 +1,5 @@
 "use client"
-import { Dancing_Script } from 'next/font/google'
 import { motion } from 'framer-motion'
-
-const dancingScript = Dancing_Script({ 
-  subsets: ['latin'],
-  weight: ['400', '700']
-})
 
 export function Hero() {
   return (
@@ -14,7 +8,7 @@ export function Hero() {
         className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-50"
       />
       <motion.h1 
-        className={`relative text-8xl font-bold text-white ${dancingScript.className}`}
+        className="font-cursive text-8xl font-bold text-white"
         initial={{ scale: 1 }}
         animate={{ 
           scale: [1, 1.1, 1],

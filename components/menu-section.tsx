@@ -1,12 +1,7 @@
 "use client"
 import { Card } from "@/components/ui/card"
 import Image from "next/image"
-import { Geist } from "next/font/google"
 import { motion } from 'framer-motion'
-
-const geist = Geist({
-  subsets: ["latin"],
-})
 
 interface MenuItem {
   name: string
@@ -31,7 +26,7 @@ export function MenuSection({ title, items }: MenuSectionProps) {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            <Card className={`overflow-hidden bg-zinc-800 text-white ${geist.className}`}>
+            <Card className={`overflow-hidden bg-zinc-800 text-white`}>
               <div className="relative h-48">
                 <Image
                   src={item.image}
