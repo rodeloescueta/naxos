@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
     domains: [], // Add any external image domains if needed
   },
-  basePath: '/your-repo-name', // Replace with your repository name
+  basePath: '/naxos', // Since your repo is named 'naxos'
 }
 
 module.exports = nextConfig 
